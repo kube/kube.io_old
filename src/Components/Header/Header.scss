@@ -1,0 +1,62 @@
+header {
+  nav {
+    $passiveColor: #B6B6B6; 
+    $activeColor: $kubeColor;
+
+    text-align: center;
+    padding-top: 42px;
+
+    ul {
+      margin: 0;
+      padding: 0;
+
+      li {
+        list-style: none;
+        display: inline-block;
+        line-height: 45px;
+        vertical-align: middle;
+        text-transform: uppercase;
+        padding: 9px 18px;
+
+        a {
+          transition-duration: 0.4s;
+          text-decoration: none;
+          font-size: 20px;
+          letter-spacing: 3px;
+          font-weight: 200;
+          color: $passiveColor;
+
+          .logo-kube {
+            transition-duration: 0.5s;
+            width: 54px;
+
+            path {
+              fill: $passiveColor;
+            }
+          }
+
+          &.active {
+            color: $activeColor;
+            font-weight: 500;
+
+            .logo-kube {
+              width: 76px;
+
+              path {
+                fill: $kubeColor;
+              }
+            }
+          }
+        }
+
+        &:first-child {
+          text-align: right;
+        }
+
+        &:last-child {
+          text-align: left;
+        }
+      }
+    }
+  }
+}

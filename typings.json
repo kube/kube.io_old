@@ -1,0 +1,11 @@
+{
+  "name": "kube.io",
+  "dependencies": {},
+  "ambientDependencies": {
+    "history": "github:DefinitelyTyped/DefinitelyTyped/react-router/history.d.ts#d89fabadf4f7c556fecefa01d8c6a6b63be136a0",
+    "promise": "github:DefinitelyTyped/DefinitelyTyped/promise/promise.d.ts#52b68b9e9c434c51c78ee27066a5c473b112ba3f",
+    "react": "registry:dt/react#0.14.0+20160319053454",
+    "react-dom": "registry:dt/react-dom#0.14.0+20160316155526",
+    "react-router": "github:DefinitelyTyped/DefinitelyTyped/react-router/react-router.d.ts#94949214efbdaabe319483adc65ef4b930a4a08e"
+  }
+}

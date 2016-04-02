@@ -1,0 +1,32 @@
+{
+  "name": "kube.io",
+  "version": "0.0.1",
+  "description": "kube.io website",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kube/kube.io.git"
+  },
+  "author": "Christophe Feijoo",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/kube/kube.io/issues"
+  },
+  "homepage": "https://www.kube.io",
+  "dependencies": {
+    "browser-sync": "^2.11.2",
+    "browserify": "^13.0.0",
+    "gulp": "^3.9.1",
+    "gulp-sass": "^2.2.0",
+    "gulp-sourcemaps": "^1.6.0",
+    "gulp-util": "^3.0.7",
+    "lodash.assign": "^4.0.6",
+    "react": "^0.14.7",
+    "react-dom": "^0.14.7",
+    "react-router": "^2.0.0",
+    "tsify": "^0.14.1",
+    "typings": "^0.7.8",
+    "vinyl-buffer": "^1.0.0",
+    "vinyl-source-stream": "^1.1.0",
+    "watchify": "^3.7.0"
+  }
+}

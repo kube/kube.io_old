@@ -1,0 +1,17 @@
+$backgroundColor: #FCFCFC;
+$kubeColor: #4D3394;
+
+@import "./Stylesheets/Page";
+
+@import "./Components/Header/Header";
+
+@import "./Components/Views/Hello/Hello";
+@import "./Components/Views/Work/Work";
+@import "./Components/Views/Blog/Blog";
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  background-color: $backgroundColor;
+}
