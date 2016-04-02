@@ -53,32 +53,23 @@ gulp.task('watchify', function() {
 
 
 /**
- * Images
+ * Html
  */
-gulp.task('images', function() {
-  gulp.src(['./src/Images/**/*'])
-    .pipe(gulp.dest('./dist/assets/images'))
-})
-
-gulp.task('index', function() {
+gulp.task('html', function() {
   gulp.src(['./src/index.html'])
     .pipe(gulp.dest('./dist/'))
 })
 
-gulp.task('move', ['images', 'index'])
-
-gulp.task('move:watch', function() {
-  gulp.watch(['./src/Images/**/*', './src/index.html'], ['move'])
+gulp.task('html:watch', function() {
+  gulp.watch(['./src/index.html'], ['html'])
 })
 
 
 /**
  * Sass
  */
-var stylesheetsSources = ['./src/app.scss']
-
 gulp.task('sass', function() {
-  return gulp.src(stylesheetsSources)
+  return gulp.src('./src/app.scss')
     .pipe(sass.sync().on('error', sass.logError))
     .pipe(gulp.dest('./dist/assets/'))
     .pipe(browserSync.reload({ stream: true }))
@@ -103,8 +94,8 @@ gulp.task('serve', function() {
 })
 
 
-gulp.task('build', ['move', 'sass', 'browserify'])
-gulp.task('watch', ['move:watch', 'sass:watch', 'watchify'])
+gulp.task('build', ['browserify', 'sass', 'html'])
+gulp.task('watch', ['watchify', 'sass:watch', 'html:watch'])
 gulp.task('dev', ['watch', 'serve'])
 
 gulp.task('default', ['dev'])
