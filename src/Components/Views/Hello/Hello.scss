@@ -7,30 +7,39 @@
     section.social {
       padding: 25px;
 
-      .logo {
-        transition-duration: 0.3s;
-        width: 38px;
-        margin: 7px 13px;
-        
-        &:hover {
-          transform: scale(1.2);
-        }
+      ul {
+        padding: 0;
+        margin: 0;
 
-        &.logo-linkedin {
-          fill: #007EBB;
-        }
+        li {
+          display: inline;
 
-        &.logo-twitter {
-          fill: #00AAEC;
-        }
+          .logo {
+            transition-duration: 0.3s;
+            width: 38px;
+            margin: 7px 13px;
 
-        &.logo-stackoverflow {
-          path {
-            fill: #F48024;
-          }
+            &:hover {
+              transform: scale(1.2);
+            }
 
-          polygon {
-            fill: #BCBBBB;
+            &.logo-linkedin {
+              fill: #007EBB;
+            }
+
+            &.logo-twitter {
+              fill: #00AAEC;
+            }
+
+            &.logo-stackoverflow {
+              path {
+                fill: #F48024;
+              }
+
+              polygon {
+                fill: #BCBBBB;
+              }
+            }
           }
         }
       }
@@ -52,11 +61,21 @@
         margin: 0;
 
         li {
-          font-weight: 300;
-          display: inline;
+          list-style: none;
           padding: 16px;
           margin: 0;
-          list-style: none;
+          display: inline;
+
+          a {
+            transition-duration: 0.2s;
+            font-weight: 300;
+            text-decoration: none;
+            color: #000000;
+
+            &:hover {
+              color: $kubeColor;
+            }
+          }
         }
       }
     }

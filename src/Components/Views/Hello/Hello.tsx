@@ -27,19 +27,45 @@ export class View
         </section>
 
         <section className="social">
-          <StackOverflowLogo />
-          <GitHubLogo />
-          <LinkedInLogo />
-          <TwitterLogo />
+          <ul>
+            <li>
+              <a href="https://stackoverflow.com/users/1914206/kube" target="_blank">
+                <StackOverflowLogo />
+              </a>
+            </li>
+            <li>
+              <a href="https://github.com/kube" target="_blank">
+                <GitHubLogo />
+              </a>
+            </li>
+            <li>
+              <a href="https://linkedin.com/in/cfeijoo" target="_blank">
+                <LinkedInLogo />
+              </a>
+            </li>
+            <li>
+              <a href="https://twitter.com/KubeKhrm" target="_blank">
+                <TwitterLogo />
+              </a>
+            </li>
+          </ul>
         </section>
 
         <section className="friends">
           <h1>Friends</h1>
           <ul>
-            <li>Nax</li>
-            <li>Spuyet</li>
-            <li>Corseman</li>
-            <li>Novae</li>
+            <li>
+              <a href="http://www.nax.io" target="_blank">Nax</a>
+            </li>
+            <li>
+              <a href="https://www.spuyet.io" target="_blank">Spuyet</a>
+            </li>
+            <li>
+              <a href="http://www.corseman.io" target="_blank">Corseman</a>
+            </li>
+            <li>
+              <a href="http://www.novae.io" target="_blank">Novae</a>
+            </li>
           </ul>
         </section>
       </div>
