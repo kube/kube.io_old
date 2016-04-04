@@ -19,25 +19,34 @@
             width: 38px;
             margin: 7px 13px;
 
+            path, polygon {
+              transition-duration: 0.4s;
+              fill: #BCBBBB;
+            }
+
             &:hover {
-              transform: scale(1.2);
-            }
+              transform: scale(1.1);
 
-            &.logo-linkedin {
-              fill: #007EBB;
-            }
-
-            &.logo-twitter {
-              fill: #00AAEC;
-            }
-
-            &.logo-stackoverflow {
-              path {
-                fill: #F48024;
+              &.logo-linkedin path {
+                fill: #007EBB;
+              }
+              
+              &.logo-github path {
+                fill: #333;
               }
 
-              polygon {
-                fill: #BCBBBB;
+              &.logo-twitter path {
+                fill: #00AAEC;
+              }
+
+              &.logo-stackoverflow {
+                path {
+                  fill: #F48024;
+                }
+
+                polygon {
+                  fill: #BCBBBB;
+                }
               }
             }
           }
