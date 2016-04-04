@@ -1,3 +1,88 @@
 .page.page-work {
   @extend %page;
+
+  $passiveColor: #B6B6B6;
+  $lineColor: #D8D8D8;
+
+  article {
+    width: 100%;
+    max-width: 760px;
+    margin: 0 auto;
+    box-sizing: border-box;
+
+    .leftbar {
+      display: inline-block;
+      vertical-align: top;
+      margin: 0;
+      padding: 0;
+      width: 13%;
+      box-sizing: border-box;
+
+      .date {
+        position: relative;
+        z-index: 999;
+        padding: 9px 0;
+        margin-right: -3px;
+        background-color: $backgroundColor;
+        color: $passiveColor;
+        text-align: right;
+        letter-spacing: 1px;
+
+        .month {
+          display: block;
+          font-size: 18px;
+          font-weight: 300;
+          line-height: 18px;
+          text-transform: uppercase;
+        }
+        .year {
+          display: block;
+          font-size: 25px;
+          line-height: 22px;
+          font-weight: 500;
+        }
+      }
+    }
+
+    .content {
+      display: inline-block;
+      vertical-align: top;
+      width: 87%;
+      margin: 0;
+      padding-left: 31px;
+      padding-top: 13px;
+      padding-bottom: 76px;
+      box-sizing: border-box;
+      text-align: left;
+      border-left: 3px solid $lineColor;
+
+      h2 {
+        font-size: 25px;
+        font-weight: 500;
+        margin: 0;
+        padding: 0;
+        padding-bottom: 13px;
+      }
+
+      p.description {
+        margin: 0;
+        padding: 0;
+        padding-top: 11px;
+        padding-right: 31px;
+        font-size: 18px;
+        text-align: justify;
+      }
+
+      .logo {
+        transition-duration: 0.3s;
+        width: 36px;
+        padding-top: 9px;
+        fill: $passiveColor;
+
+        &:hover {
+          fill: #333;
+        }
+      }
+    }
+  }
 }
