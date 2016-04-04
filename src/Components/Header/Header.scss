@@ -1,7 +1,10 @@
 header {
+  $height: 65px;
+
   nav {
     $passiveColor: #B6B6B6; 
     $activeColor: $kubeColor;
+    $hoverColor: $kubeColor;
 
     text-align: center;
     padding-top: 42px;
@@ -13,7 +16,8 @@ header {
       li {
         list-style: none;
         display: inline-block;
-        line-height: 45px;
+        height: $height;
+        line-height: $height;
         vertical-align: middle;
         text-transform: uppercase;
         padding: 9px 18px;
@@ -28,11 +32,24 @@ header {
 
           .logo-kube {
             transition-duration: 0.5s;
+            transition-timing-function: cubic-bezier(0.68, -0.55, 0.265, 1.55);
             width: 54px;
 
             path {
+              transition-duration: 0.5s;
               fill: $passiveColor;
             }
+
+            &:hover {
+              transform: scale(1.1);
+              path {
+                fill: $hoverColor;
+              }
+            }
+          }
+
+          &:hover {
+            color: $hoverColor;
           }
 
           &.active {
