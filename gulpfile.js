@@ -61,7 +61,7 @@ gulp.task('html', function() {
 })
 
 gulp.task('html:watch', function() {
-  gulp.watch(['./src/index.html'], ['html'])
+  gulp.watch(['./src/index.html'], ['html'], browserSync.reload)
 })
 
 
